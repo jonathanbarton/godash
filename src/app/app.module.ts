@@ -4,17 +4,27 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { AppWindowComponent } from './app-window/app-window.component';
+import { AppLogoComponent } from './app-logo/app-logo.component';
+import { MessageTerminalComponent } from './message-terminal/message-terminal.component';
+
+import { MessageService } from './messages.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AppWindowComponent,
+    AppLogoComponent,
+    MessageTerminalComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [
+    MessageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

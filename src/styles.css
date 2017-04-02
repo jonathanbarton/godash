@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  background-color: #008080;
+}
+
+@font-face {
+	font-family: 'Px437 IBM VGA9';
+	src: url('assets/Px437_IBM_VGA9.eot');
+	src: url('assets/Px437_IBM_VGA9.eot?#iefix') format('embedded-opentype'),
+		url('assets/Px437_IBM_VGA9.woff') format('woff'),
+		url('assets/Px437_IBM_VGA9.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.vga-text {
+    font-family: 'Px437 IBM VGA9';
+    font-weight: normal;
+    font-style: normal;
+}
